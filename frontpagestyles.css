@@ -2,6 +2,10 @@ body {
 	padding: 0px;
 }
 
+a {
+	color: black;
+}
+
 /* RESPONSIVE DESIGN HERE, when screen is smaller this should show up and push header down
 and should become a menu icon instead of menubuttons */
 #navbar {
@@ -28,8 +32,7 @@ and should become a menu icon instead of menubuttons */
 }
 
 #header img {
-	width: 10%;
-	position: relative;
+	width: 5%;
 }
 
 .menubutts {
@@ -59,10 +62,6 @@ and should become a menu icon instead of menubuttons */
 	float: left;
 	padding-left: 30px; /* CHANGE THIS WITH RESPONSIVENESS, cannot have hard numbers */
 	padding-right: 30px;
-}
-
-#bigpicture img {
-
 }
 
 #homepgpic {
