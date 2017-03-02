@@ -1,9 +1,3 @@
 # roseandflour
 
-## actually going to focus on formatting later
-
-Some more testing
----
-
-Will this move to github?
----
+## Use of normalize.css to help reset cross platform defaults.
