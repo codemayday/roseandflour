@@ -69,6 +69,49 @@ and should become a menu icon instead of menubuttons */
 }
 /* make grayed out? */
 
+
+.bptext {
+	line-height: 35px;
+	color: #303030;
+	padding: 50px;
+	width: 50%;
+	float: left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.bppic {
+	width: 50%;
+	float: left;
+	display: inline;
+}
+
+.btn {
+	background-color: white;
+	border: none;
+	font-style: italic;
+	color: #F9DDD4;
+	font-family: serif;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+
+#bp2text {
+	background-color: white;
+}
+
+#test1 {
+	background-color: red;
+	display: inline;
+}
+
+#test2 {
+	background-color: blue;
+}
+
 img {
 	width: 100%;
 }
