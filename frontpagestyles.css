@@ -6,6 +6,15 @@ a {
 	color: black;
 }
 
+.container {
+	font-size: 0;
+}
+/* used to remove the annoying white space between divs */
+
+.container > div {
+	font-size: 1rem;
+}
+
 /* RESPONSIVE DESIGN HERE, when screen is smaller this should show up and push header down
 and should become a menu icon instead of menubuttons */
 #navbar {
@@ -65,10 +74,31 @@ and should become a menu icon instead of menubuttons */
 }
 
 #homepgpic {
-
+	object-fit: cover;
+	max-height: 600px;
 }
 /* make grayed out? */
 
+#homepgbtn {
+	padding: 15px 25px 15px 25px;
+	position: absolute;
+	left: 45%;
+	top: 70%;
+	border: solid white 1px;
+	background-color: transparent;
+	color: white;
+	font-family: serif;
+	font-style: italic;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#homepgbtn:hover {
+	background-color: white;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
 
 .bptext {
 	line-height: 35px;
@@ -80,11 +110,13 @@ and should become a menu icon instead of menubuttons */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+/* HOW TO MAKE SURE THAT THE TEXT BOX MATCHES SIZE OF PICTURES ITS ASSOCIATED WITH?
+probably need to change rem to vw or some responsive text type */
 
 .bppic {
 	width: 50%;
 	float: left;
-	display: inline;
+	display: inline-block;
 }
 
 .btn {
@@ -101,15 +133,6 @@ and should become a menu icon instead of menubuttons */
 
 #bp2text {
 	background-color: white;
-}
-
-#test1 {
-	background-color: red;
-	display: inline;
-}
-
-#test2 {
-	background-color: blue;
 }
 
 img {
