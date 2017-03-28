@@ -1,5 +1,6 @@
 body {
 	padding: 0px;
+	color: #303030
 }
 
 a {
@@ -20,13 +21,13 @@ and should become a menu icon instead of menubuttons */
 #navbar {
 	width: 100%;
 	height: 50px;
-	background-color: #E0D5D7;
+	background-color: white;
 	position: fixed;
 }
 
 #header {
 	background-color: white;
-	height: 150px;
+	height: 130px;
 	position: relative;
 	text-align: center;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -46,14 +47,14 @@ and should become a menu icon instead of menubuttons */
 
 .menubutts {
 	width: 100%;
-	background-color: #E0D5D7;
+	background-color: white;
 	display: inline-block;
 	height: 50px;
 }
 
 #menubuttons {
 	width: 100%;
-	background-color: #E0D5D7;
+	background-color: white;
 	display: inline-block;
 	height: 50px;
 	z-index: 1; /* for some reason not showing up above navbar, check again later */
@@ -95,13 +96,64 @@ and should become a menu icon instead of menubuttons */
 }
 
 #homepgbtn:hover {
-	background-color: white;
-	-webkit-text-fill-color: transparent;
+	color: transparent;
 	-webkit-background-clip: text;
+	background-color: white;
 }
+
+#trendsarea {
+	font-size: 0;
+	padding: 40px;
+}
+
+#trendbanner {
+	width: 100%;
+	height: 50px;
+	font-size: 1rem;
+	font-style: italic;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#trendheadline {
+	width: 75%;
+	border-bottom: 1px solid black;
+	text-align: center;
+	margin: auto;
+	height: 10px;
+}
+
+#trendheadline span {
+	font-size: 20px;
+	background-color: white;
+	padding-top: 0px;
+}
+
+.trend {
+	width: 33%;
+	height: auto;
+	background-color: white;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 15px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	overflow: hidden;
+}
+
+.trendpic:hover {
+
+}
+/* Do I want to use css to hover to put a film over the picture and show text
+or do i want to use javascript where i switch out the picture that is showing
+to one that is already grayed out and includes the text... will this option work
+well with responsiveness? */
 
 .bptext {
 	line-height: 35px;
+	background-color: #E0D5D7;
 	color: #303030;
 	padding: 50px;
 	width: 50%;
@@ -115,15 +167,16 @@ probably need to change rem to vw or some responsive text type */
 
 .bppic {
 	width: 50%;
+	height: auto;
 	float: left;
 	display: inline-block;
+	line-height: 0;
 }
 
 .btn {
-	background-color: white;
+	background-color: transparent;
 	border: none;
 	font-style: italic;
-	color: #F9DDD4;
 	font-family: serif;
 }
 
@@ -132,7 +185,7 @@ probably need to change rem to vw or some responsive text type */
 }
 
 #bp2text {
-	background-color: white;
+	background-color: #F3F3F3;
 }
 
 img {
